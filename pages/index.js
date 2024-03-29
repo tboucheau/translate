@@ -17,7 +17,7 @@ const IndexPage = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('https://0ov22ju63f.execute-api.eu-central-1.amazonaws.com/translate', { data: inputValue, target: targetLanguage });
+      const response = await axios.post('https://nnbgvwnxn1.execute-api.eu-central-1.amazonaws.com/translate', { data: inputValue, target: targetLanguage });
       setResponseData(response.data);
     } catch (error) {
       setError(error);
